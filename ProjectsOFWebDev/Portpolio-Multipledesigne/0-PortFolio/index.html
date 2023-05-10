@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- aos css cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- ===================
+           Link CSS file
+         ===================-->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- ===================
+               font awesome CDN
+              ===================-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ======================
+              Google font cdn-> poppins 
+              ======================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Kanit&family=Nunito&family=Tangerine:wght@700&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="MainHeading">
+      <input type="checkbox" id="CheckBox" />
+      <label for="CheckBox" class="CheckBar">
+        <i class="fas fa-bars"></i>
+      </label>
+      <h2 data-aos="fade-right">Portfolio</h2>
+      <nav class="Navigation" data-aos="fade-left">
+        <a href="#Home">Home</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Services">Services</a>
+        <a href="#"><label for="CheckBox2">Contact</label></a>
+        <a href="#About">About</a>
+      </nav>
+    </header>
+    <!-- <header >
+      <input type="checkbox" id="CheckBox">
+      <label for="CheckBox" class="CheckBar"> <i class="fas fa-bars"></i> </label>
+      <h2 >Portfolio</h2>
+      <nav class="Navigation">
+        <a href="index.html">Home</a>
+        <a href="#Projects">Projects</a>
+        <select id="ProjectList">
+          <a href="#HtmlCssProject">HTML,CSS</a>
+          <option value="Select"   disabled selected>Select a project</option>
+          <option value="HTMLCSSJS">HTML,CSS,JS</option>
+          <option value="Backend">Back-end</option>
+        </select>
+        <a href="contact.html">Contact US</a>
+        <a href="#About">About</a>
+      </nav>
+    </header> -->
+    <br />
+    <!-- =====================
+          Main Section layout
+         =====================-->
+    <section class="HeroSection" id="Home" data-aos="zoom-in">
+      <img
+        src="./Assets/MyPhoto.png"
+        alt="Bas"
+        class="Img animate__rubberBand"
+      />
+
+      <div class="text">
+        <h3>
+          <span id="HiiText"
+            >Hii <i class="fa-solid fa-heart" style="color: #e6f41f"></i></span
+          >, I`m <span id="DeveloperName">Chhotu Kumar</span>
+        </h3>
+        <div class="text-container">
+          <span>F</span>
+          <span>u</span>
+          <span>l</span>
+          <span>l</span>
+          <span>&nbsp;</span>
+
+          <span>S</span>
+          <span>t</span>
+          <span>a</span>
+          <span>c</span>
+          <span>k</span>
+          <span>&nbsp;</span>
+          <span>D</span>
+          <span>e</span>
+          <span>v</span>
+          <span>e</span>
+          <span>l</span>
+          <span>o</span>
+          <span>p</span>
+          <span>e</span>
+          <span>r</span>
+        </div>
+      </div>
+
+      <!-- <div class="ProfessionalContainer">
+        <div class="ProfessionalBox">
+            <div class="Profession" style="--i:0;"><h3>web development</h3></div>
+            <div class="Profession" style="--i:1;"><h3>Ui/UX </h3></div>
+            <div class="Profession" style="--i:2;"><h3>graphic</h3></div>
+            <div class="Profession" style="--i:3;"><h3>app development</h3></div>
+
+        </div>
+    </div> -->
+    </section>
+    <hr />
+
+    <!-- =====================
+        Projects layout
+         =====================-->
+    <section class="Projects" id="Projects">
+      <h2 data-aos="fade-down">PROJECTS</h2>
+
+      <div class="project_container">
+        <div class="grid_item" data-aos="zoom-out-down">
+          <div class="card">
+            <img src="./Assets/Project1.jpeg" alt="Project 1" />
+            <div class="card_content">
+              <a href="index2.html" title="Click & Open">Tribute Website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid_item" data-aos="zoom-out-down">
+          <div class="card">
+            <img src="./Assets/Project2.jpeg" alt="Project 2" />
+            <div class="card_content">
+              <a href="index3.html" title="Click & Open">Job Application</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid_item" data-aos="zoom-out-down">
+          <div class="card">
+            <img src="./Assets/Project3.jpeg" alt="Project 1" />
+            <div class="card_content">
+              <a href="./3-PrallexWebsite/index.html" title="Click & Open"
+                >Parallax Website</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="grid_item" data-aos="zoom-out-down">
+          <div class="card">
+            <img src="./Assets/Project4.jpeg" alt="Project 4" />
+            <div class="card_content">
+              <a href="index4.html" title="Click & Open">Landing Page</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid_item" data-aos="zoom-out-down">
+          <div class="card">
+            <img src="./Assets/Project5.jpeg" alt="Project 5" />
+            <div class="card_content">
+              <a href="/index5.html" title="Click & Open">Restaurant Website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid_item" data-aos="zoom-out-down">
+          <div class="card">
+            <img src="./Assets/Project6.jpeg" alt="Project6" />
+            <div class="card_content">
+              <a href="index6.html" title="Click & Open">Music Website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+           Conctac Us layout
+         =====================-->
+
+    <section class="Contact">
+      <div class="MessageButton">
+        <input type="checkbox" id="CheckBox2" onclick="ChangeImage()" />
+        <label for="CheckBox2" class="CheckBoxIcon">
+          <img src="./Assets/MessageIcon.png" alt="Send" id="MessageIcon" />
+        </label>
+
+        <div class="contact-form-container" id="Moving">
+          <div class="Heading">
+            <h2>Hello There</h2>
+            <!-- <p>Welcome to my portfolio! <br>
+                If you want to contact me, then fill this form.</p> -->
+          </div>
+          <form action="#" method="POST" data-aos="zoom-out-up">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <!-- <select name="Country" id="Country">
+              <option value="" Selected disabled>Select Your Country</option>
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="Russia">Russia</option>
+              <option value="Germany">Germany</option>
+              <option value="Japan">Japan</option>
+              <option value="UK">UK</option>
+            </select> -->
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <!-- <label for="Country">Country:</label> -->
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+           About Section layout
+         =====================-->
+    <section id="About" class="About">
+      <div class="about-section">
+        <h2
+          style="text-align: center; padding-bottom: 10px; color: white"
+          data-aos="zoom-in"
+        >
+          Hello and welcome to my portfolio!
+        </h2>
+        <p data-aos="zoom-out">
+          My name is Chhotu Kumar, and I am currently pursuing BCA (3rd
+          Semester). As a student, I am dedicated to learning and growing in the
+          field of software engineering or software development, and I am
+          excited to showcase my skills and experience in this portfolio.
+
+          <br />
+          <br />
+          I have a strong foundation in programming languages such as C, C++,
+          and Java, as well as in Data Structures and Algorithms. Additionally,
+          I have experience in web development using HTML, CSS, JavaScript,
+          Bootstrap, React, SQL, MongoDB, and Oracle. I am also proficient in
+          additional skills such as video editing, graphics designing, and
+          Microsoft Excel.
+          <br /><br />
+          While I may not have direct work experience in an organization yet, I
+          have completed several projects using my skills, which have allowed me
+          to gain valuable experience and hone my abilities. I am committed to
+          using my skills to contribute to the goals of an organization and to
+          further my own professional growth.
+          <br /><br />
+          My ultimate goal is to work as a software engineer in an organization
+          where I can learn new skills and increase my abilities for both the
+          organization's goals and my own. I am excited about the prospect of
+          joining a team and using my skills to help develop innovative
+          solutions.
+          <br />
+          <br />
+          <span>
+            <i>
+              Thank you for taking the time to explore my portfolio. Please feel
+              free to contact me with any questions or project inquiries. I look
+              forward to the opportunity to work with you.
+            </i>
+          </span>
+        </p>
+      </div>
+      <h2 style="text-align: center; color: white" data-aos="fade-down">Our Team for freelancing</h2>
+      <div class="Container">
+        <div class="flip-card" data-aos="zoom-in">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="./Assets/Chhotu.jpeg"
+                alt="Avatar"
+                style="width: 250px; height: 250px"
+              />
+              <div
+                style="
+                  position: absolute;
+                  bottom: 0;
+                  width: 250px;
+                  background-color: #e6f41f;
+                  margin: 5px;
+                "
+              >
+                <h2>Chhotu Patel</h2>
+                <p class="JobTitle" style="color: gray">CEO & Founder</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h1>Chhotu Patel</h1>
+              <p>CEO, Founder & Engineer</p>
+              <p style="border-top: 1px solid yellow; padding-top: 10px">
+                Hello guys, i`ve pursuing graduation from Ramadhin College under
+                Munger university.
+                <br />
+                <br />
+                i`m CEO & Founder of SES and as well as Engineer.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" data-aos="zoom-in">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="./Assets/Zaid.jpg"
+                alt="Avatar"
+                style="width: 250px; height: 250px"
+              />
+              <div
+                style="
+                  position: absolute;
+                  bottom: 0;
+                  width: 250px;
+                  background-color: #e6f41f;
+                  margin: 5px;
+                "
+              >
+                <h2>Md. Zaid Khan</h2>
+                <p class="JobTitle" style="color: gray">Instructor</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h1>Md. Zaid Khan</h1>
+              <p>Instructor & Engineer</p>
+              <p style="border-top: 1px solid yellow; padding-top: 10px">
+                Hello guys, i`ve pursuing graduation from Ramadhin College under
+                Munger university.
+                <br />
+                <br />
+                i`m Instructor of SES and as well as Engineer.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" data-aos="zoom-in">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="./Assets/Suryakant.jpg"
+                alt="Avatar"
+                style="width: 250px; height: 250px"
+              />
+              <div
+                style="
+                  position: absolute;
+                  bottom: 0;
+                  width: 250px;
+                  background-color: #e6f41f;
+                  margin: 5px;
+                "
+              >
+                <h2>Suryakant Choudhary</h2>
+                <p class="JobTitle" style="color: gray">Designer</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h1>Suryakant Choudhary</h1>
+              <p>Designer</p>
+              <p style="border-top: 1px solid yellow; padding-top: 10px">
+                Hello guys, i`ve pursuing graduation from Ramadhin College under
+                Munger university. <br />
+                <br />
+                i`m Designer of SES and as well as Developer.
+              </p>
+            </div>
+            -
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+          Service Section layout
+         =====================-->
+    <hr />
+    <section class="Services" id="Services">
+      <h2 style="text-align: center; color: white" data-aos="zoom-out">
+        Services
+      </h2>
+      <div class="Container">
+        <div data-aos="zoom-in">
+          <img src="./Assets/Web Development.png" alt="" />
+          <h2>Web Development</h2>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nam
+            eius incidunt voluptate dignissimos eum impedit dolorem sint eos!
+            Dolorum.
+          </p>
+        </div>
+
+        <div data-aos="zoom-in">
+          <img src="./Assets/AndroidApp.png" alt="" />
+          <h2>App Development</h2>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nam
+            eius incidunt voluptate dignissimos eum impedit dolorem sint eos!
+            Dolorum.
+          </p>
+        </div>
+
+        <div data-aos="zoom-in">
+          <img src="./Assets/ux_ui.png" alt="" />
+          <h2>UI/UX designing</h2>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nam
+            eius incidunt voluptate dignissimos eum impedit dolorem sint eos!
+            Dolorum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+   footer section layout
+         =====================-->
+    <footer>
+      <p>Copyright © 2022 LOGO. All rights reserved.</p>
+      <ul>
+        <li>
+          <a href="https://github.com/chhotu12345678">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/chhotu-kumar-13364923a/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/techwithchhotu/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://m.facebook.com/profile.php?id=100090593553409&eav"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </li>
+      </ul>
+      <a href="#Home" id="TopNavigator"><i class="fa-solid fa-arrow-up"></i></a>
+    </footer>
+
+    <!-- my js file -->
+    <script src="script.js"></script>
+
+    <!-- aos js cdn -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 500,
+        easing: "ease-in-sine",
+        // delay: 100,
+      });
+    </script>
+  </body>
+</html>

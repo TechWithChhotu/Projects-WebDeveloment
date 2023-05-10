@@ -1,0 +1,788 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+:root {
+  --HeroSectionColor: #003d62;
+  --ProjectSectionColor: #044c79;
+  --HeaderColor: #0089b7;
+}
+html,
+body {
+  /* font-family: "Kanit", sans-serif; */
+  /* font-family: "Nunito", sans-serif; */
+  /* font-family: "Tangerine", cursive; */
+  font-family: "Varela Round", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: var(--HeroSectionColor);
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header {
+  height: 8vh;
+  width: 100%;
+  background-color: #0089b7;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+header .Navigation {
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: fit-content;
+}
+
+header .Navigation a {
+  border: 1px solid transparent;
+  padding: 3px;
+  transition: 0.5s;
+}
+header .Navigation a:hover {
+  border: 1px solid white;
+  background-color: #009cb758;
+}
+
+#ProjectList {
+  outline: none;
+  background-color: transparent;
+  border-radius: 5px;
+  color: white;
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+
+}
+.Projects{
+  overflow-x: hidden;
+}
+
+.CheckBar {
+  position: absolute;
+  right: 20px;
+  display: none;
+}
+
+#CheckBox {
+  display: none;
+}
+
+.HeroSection {
+  background-color: var(--HeroSectionColor);
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Img {
+  border-radius: 40%;
+  animation: imgmove 5s linear infinite;
+  border: 4px solid white;
+  box-shadow: 4px 2px 2px red;
+}
+
+/* why its working wrong this */
+@keyframes imgmove {
+  to {
+    /* box-shadow: -4px -2px -2px red; */
+    border-color: #ffff00;
+  }
+  /* from {
+    transform: translateY(-2px);
+  } */
+}
+
+.HeroSection .text h3 {
+  color: white;
+  font-size: 2rem;
+}
+.HeroSection .text #HiiText {
+  font-size: 3rem;
+  color: #ffff00;
+}
+.HeroSection .text #DeveloperName {
+  font-size: 3rem;
+}
+
+.text-container {
+  /* border: 2px solid rgb(204, 42, 229); */
+
+  width: 635px;
+  height: 5.2rem;
+}
+
+.text-container span {
+  /* animation: glow 5s ease-in infinite; */
+  animation: glow 5s step-end infinite;
+
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+@keyframes glow {
+  /* 0%, 100%  */
+  0%,
+  100% {
+    color: #fff;
+    font-size: 3.5rem;
+    text-shadow: 0 0 15px #0652dd, 0 0 50px #0652dd, 0 0 100px #0652dd;
+  }
+
+  10%,
+  90% {
+    color: #111;
+    font-size: 3rem;
+    text-shadow: none;
+  }
+}
+.text-container > span:first-child {
+  color: yellow;
+}
+.text-container > span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.text-container > span:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.text-container > span:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+.text-container > span:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.text-container > span:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+.text-container > span:nth-child(7) {
+  animation-delay: 1.5s;
+}
+
+.text-container > span:nth-child(8) {
+  animation-delay: 1.75s;
+}
+
+.text-container > span:nth-child(9) {
+  animation-delay: 2s;
+}
+
+.text-container > span:nth-child(10) {
+  animation-delay: 2.25s;
+}
+
+.text-container > span:nth-child(11) {
+  animation-delay: 2.5s;
+}
+
+.text-container > span:nth-child(12) {
+  animation-delay: 2.75s;
+}
+
+.text-container > span:nth-child(13) {
+  animation-delay: 3s;
+}
+
+.text-container > span:nth-child(14) {
+  animation-delay: 3.25s;
+}
+.text-container > span:nth-child(15) {
+  animation-delay: 3.5s;
+}
+.text-container > span:nth-child(16) {
+  animation-delay: 3.75s;
+}
+
+.text-container > span:nth-child(17) {
+  animation-delay: 4s;
+}
+
+.text-container > span:nth-child(18) {
+  animation-delay: 4.25s;
+}
+
+.text-container > span:nth-child(19) {
+  animation-delay: 4.5s;
+}
+
+.text-container > span:nth-child(20) {
+  animation-delay: 4.75s;
+}
+/* 
+
+.ProfessionalContainer{
+    position: absolute;
+    top: 82%;
+    right: auto;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+}
+
+.ProfessionalContainer .ProfessionalBox{
+position:absolute;
+top: 0;
+right: 0;
+width: 200px;
+height: 200px;
+background-color: purple;
+border-radius: 50%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+animation:  ProfessionalRotation 13s ease-out infinite;
+
+}
+
+@keyframes ProfessionalRotation {
+0%,20%{
+    transform: rotate(0deg);
+}
+25%,45%{
+    transform: rotate(-90deg);
+}
+50%,70%{
+    transform: rotate(-180deg);
+}
+75%,95%{
+    transform: rotate(-270deg);
+}
+100%{
+    transform: rotate(-360deg);
+}
+}
+.ProfessionalContainer .ProfessionalBox .Profession{
+position: absolute;
+display: flex;
+left: 0;
+align-items: center;
+flex-direction: column;
+color: blue;
+transform: rotate(calc(360deg/4* var(--i)));
+transform-origin: 100px;
+} */
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: #ffff00;
+}
+
+/* ================================
+      Designe for Project section
+   =================================*/
+#Projects {
+  background-color: #044c79;
+  padding-bottom: 30px;
+}
+
+#Projects h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+.project_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  place-items: center;
+}
+
+.card {
+  height: 400px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+  background: linear-gradient(transparent, #ff00ae);
+}
+
+.card img {
+  height: 400px;
+  width: 320px;
+}
+.card:hover img {
+  opacity: 0.5;
+  transform: scale(1.05);
+  transition: 1s ease-in-out;
+}
+
+.card_content {
+  position: relative;
+  top: -6.5rem;
+  margin-bottom: -6.5rem;
+  transition: 0.5s ease-in-out;
+  transform: translateY(100px);
+}
+
+.card:hover .card_content {
+  background-color: #f309a8;
+  opacity: 0.5;
+  transform: translateY(85px);
+  font-weight: 900;
+}
+
+.card_content a {
+  display: flex;
+  justify-content: center;
+  color: yellow;
+}
+
+/* Message buttom section designe */
+
+.MessageButton {
+  width: 50px;
+  height: 50px;
+  background-color: #ffff00;
+
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 100% 20% 100% 100%;
+}
+.MessageButton:hover {
+  background-color: #09ff00;
+  width: 54px;
+  height: 54px;
+
+  bottom: 8px;
+  right: 8px;
+}
+
+.MessageButton:hover #MessageIcon {
+  width: 32px;
+  height: 32px;
+}
+#MessageIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-form-container {
+  display: none;
+  row-gap: 10px;
+  min-width: 300px;
+  max-height: 450px;
+  border: 2px solid #ee2068;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px #ee2068;
+  position: fixed;
+  bottom: -350px;
+  right: 10px;
+  background-color: #ef3274;
+
+  transition: 0.5s;
+  animation: abc 1s ease-in-out 1 both;
+}
+
+@keyframes abc {
+  to {
+    transform: translateY(-415px);
+  }
+  /* from{
+    transform: translateY(-500px);
+  } */
+}
+
+#CheckBox2:checked ~ .contact-form-container {
+  display: block;
+}
+.contact-form-container form input,
+.contact-form-container form textarea,
+.contact-form-container form #Country {
+  height: 30px;
+  font-size: 18px;
+  border: 2px solid white;
+  background-color: #07d180;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact-form-container form textarea {
+  height: 50px;
+  width: auto;
+}
+
+.contact-form-container form button {
+  width: fit-content;
+  padding: 2px 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: yellow;
+
+  display: flex;
+  align-self: center;
+}
+
+.contact-form-container form button:hover {
+  background-color: transparent;
+}
+
+.Heading {
+  text-align: center;
+  background-color: #ffff00;
+  padding: 20px;
+  border-radius: 5px 5px 0 0;
+}
+.Heading h2 {
+  color: rgb(242, 0, 255);
+}
+.Heading p {
+  color: black;
+}
+.contact-form-container form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#CheckBox2 {
+  display: none;
+}
+
+/* ====================
+      Responsive
+    =================== */
+
+@media (max-width: 539px) {
+  .CheckBar {
+    display: block;
+  }
+
+  header .Navigation {
+    display: none;
+  }
+
+  #CheckBox:checked ~ .Navigation {
+    position: absolute;
+    top: 8vh;
+    display: grid;
+    width: fit-content;
+    right: 0;
+    padding: 10px 0;
+    background-color: black;
+    transition: 1s ease-in-out;
+  }
+  #CheckBox:checked ~ .Navigation a {
+    padding: 5px 20px;
+  }
+
+  .HeroSection {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Img {
+    width: 170px;
+    height: 200px;
+  }
+  .HeroSection .text {
+    width: fit-content;
+    display: grid;
+    place-items: center;
+  }
+
+  .HeroSection .text-container {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+  .HeroSection .text h3 {
+    color: white;
+    font-size: 1.2rem;
+  }
+  .HeroSection .text #HiiText {
+    font-size: 2rem;
+    color: #ffff00;
+  }
+  .HeroSection .text #DeveloperName {
+    font-size: 2rem;
+  }
+
+  .text-container > span {
+    font-size: 1.8rem;
+  }
+
+  @keyframes glow {
+    /* 0%, 100%  */
+    0%,
+    100% {
+      color: #fff;
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #0652dd, 0 0 50px #0652dd, 0 0 100px #0652dd;
+    }
+
+    10%,
+    90% {
+      color: #111;
+      font-size: 1.8rem;
+      text-shadow: none;
+    }
+  }
+
+  @keyframes glow {
+    /* 0%, 100%  */
+    0%,
+    100% {
+      color: #fff;
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #0652dd, 0 0 50px #0652dd, 0 0 100px #0652dd;
+    }
+
+    10%,
+    90% {
+      color: #111;
+      font-size: 1.8rem;
+      text-shadow: none;
+    }
+  }
+}
+
+@media screen and (min-width: 539px) and (max-width: 767px) {
+  header {
+    padding: 0 70px;
+  }
+  .HeroSection {
+    display: grid;
+    place-items: center;
+  }
+
+  .Img {
+    width: 270px;
+    height: 300px;
+  }
+
+  .HeroSection .text {
+    display: grid;
+    place-items: center;
+  }
+
+  .text-container {
+    width: 100%;
+  }
+
+  .text-container > span {
+    font-size: 2.8rem;
+  }
+
+  @keyframes glow {
+    /* 0%, 100%  */
+    0%,
+    100% {
+      color: #fff;
+      font-size: 3.5rem;
+      text-shadow: 0 0 10px #0652dd, 0 0 50px #0652dd, 0 0 100px #0652dd;
+    }
+
+    10%,
+    90% {
+      color: #111;
+      font-size: 2.8rem;
+      text-shadow: none;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 912px) {
+  header {
+    padding: 0 70px;
+  }
+  .HeroSection {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+/* =========================
+        About Section 
+   =========================*/
+
+.About {
+  background-color: var(--HeroSectionColor);
+  padding-bottom: 30px;
+  border-top: 1px solid white;
+  padding-top: 10px;
+}
+.about-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+  width: 100%;
+  color: rgb(214, 72, 129);
+  padding: 10px 60px;
+  text-align: justify;
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  display: inline-block;
+
+  background-color: transparent;
+  width: 260px;
+  height: 260px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  z-index: 8;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: dodgerblue;
+  /* background-color: yellow; */
+
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 260px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+  width: 260px;
+  height: 260px;
+  border: 5px solid yellow;
+}
+
+.Container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+.Services{
+margin: 10px 0 30px 0;
+}
+.Services .Container div {
+  height: 300px;
+  width: 300px;
+  border: 2px solid white;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  text-align: justify;
+  transition: 0.5s;
+  background-color: #31859e;
+z-index: 1;
+}
+.Contact{
+  z-index: 105;
+}
+.Services .Container div:hover {
+  background-color: #32768b;
+  
+  /* filter: blur(1px); Adding blur background image */
+}
+.Container div img {
+  height: 100px;
+  width: 100px;
+}
+
+/* =======================
+        Footer Designe
+   =======================*/
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: var(--HeaderColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  list-style: none;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  align-items: center;
+  font-size: 20px;
+}
+footer ul li {
+  height: 22px;
+  width: 22px;
+  text-align: center;
+}
+footer ul li:hover {
+  background-color: purple;
+  border-radius: 100%;
+}
+#TopNavigator {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  text-align: center;
+  line-height: 30px;
+}
